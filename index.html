@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <title>JavaScript RPS Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="wrapper">
+        <div class="title">Rock, Paper or Scissors?</div>
+
+        <div class="choices">
+            <button class="btn" id="rock" value="rock" onclick="getChoice()">Rock</button>
+            <button class="btn" id="paper" value="paper" onclick="getChoice()">Paper</button>
+            <button class="btn" id="scissors" value="scissors" onclick="getChoice()">Scissors</button>
+        </div>
+
+        <br>
+        <div class="displayChoice">
+            <div class="userChoiceDiv">
+                <p id="userChoice">You chose __</p>
+            </div>
+
+            <div class="computerChoiceDiv">
+                <p id="computerChoice">Computer chose __</p>
+            </div>  
+        </div>
+
+        <br>
+        <div id="displayResult">
+            <p>Who will win?</p>
+        </div>
+
+        <br>
+        <div id="totalDiv">
+            <button class="button" id="totalScore" onclick="displayScore()">Show result</button>
+        </div>
+
+
+        <br>
+        <div id="gameFlowBtns">
+        <button id="restartBtn" onclick="document.location.reload(true)">Restart Game</button>
+        <button id="endBtn" onclick="endGame()">End Game</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
